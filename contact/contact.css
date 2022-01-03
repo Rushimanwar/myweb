@@ -1,0 +1,209 @@
+main{
+    position: relative;
+    height: 50vh;
+    margin-top: 7vh;
+    clip-path: none;
+    justify-content: left;
+    align-items: left;
+    display: flex;
+    background-image:linear-gradient(90deg,rgb(6, 60, 236),transparent) ,url(../images/contact_us_bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right;
+}
+main .flex{
+    justify-content: center;
+    align-items: center;
+
+}
+main h2{
+    font-size: 3rem;
+    color: var(--white);
+    text-shadow: 1px 2px 3px var(--red);
+    letter-spacing: 2px;
+}
+
+/* contact section */
+.contact {
+    width: 100%;
+    padding: 20px 0;
+}
+.title{
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+ .title h2{
+    position: relative;
+    text-transform: capitalize;
+    font-size: calc(var(--text-size)*2);
+    color: var(--blue);
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: rgb(231, 31, 71);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.title p{
+    text-align: center;
+}
+.contact .field{
+    display: flex;
+    box-shadow: 1px 3px 10px rgba(17, 17, 17, 0.11);
+}
+.contact .field .get_in_touch{
+    background-color: indigo;
+    color: #fff;
+    padding: 10px;
+    width: 45%;
+}
+.contact .field .get_in_touch h2  {
+    font-size: calc(var(--text-size)*1.2);
+    text-align: center;
+}
+.contact .field .get_in_touch p {
+    font-size: calc(var(--text-size)*1);
+    text-align: center;
+}
+.contact .field .get_in_touch .contents .office{
+    padding: 10px 0;
+}
+.contact .field .get_in_touch .contents .office h2{
+    letter-spacing: 2px;
+}
+.contact .field .get_in_touch .contents  h2, .get_in_touch .contents  p{
+    text-align: left !important;
+    text-transform: capitalize;
+}
+.contact .field .get_in_touch .contents  h3{
+    font-size: calc(var(--text-size)*1.3);
+    font-weight: 500;
+
+}
+.contact .field .get_in_touch .contents  .row{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.contact .field .get_in_touch .contents .row i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;;
+}
+
+.contact .field .contact_us{
+    padding: 10px;
+    width: 60%;
+}
+.contact .field .contact_us h2{
+    text-align: left;
+    font-size: calc(var(--text-size)*1.2);
+    color: var(--black);
+}
+.contact .field .contact_us .form form .form-group{
+    display: flex;
+    margin: 10px 0;
+}
+.contact .field .contact_us .form form  .form-group:nth-child(1), .form-group:nth-child(2){
+    gap: 10px;
+}
+.contact .field .contact_us .form form  .form-group:nth-child(3), .form-group:nth-child(4){
+    flex-direction: column;
+}
+.contact .field .contact_us .form form .form-group .first_name , .last_name, .number, .email{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contact .field .contact_us .form form .form-group label{
+    font-size: var(--text-size);
+    font-weight: 500;
+    padding: 5px 0;
+}
+.contact .field .contact_us .form form .form-group input,textarea{
+    padding: 5px;
+    border: 1px solid blueviolet;
+    border-radius: 3px;
+    border-bottom: 2px solid blueviolet;
+    resize: vertical;
+    font-size: var(--text-size);
+    width: 100%;
+}
+.contact .field .contact_us .form form .form-group textarea{
+    height: 120px;
+}
+.contact .field .contact_us .form form .form-group input[type="submit"]{
+    padding: 5px 10px;
+    font-size: var(--text-size);
+    background-color: rgba(137, 43, 226);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.contact .field .contact_us .form form .form-group input[type="submit"]:hover{
+    color: blueviolet;
+    background-color: transparent;
+}
+@media (max-width:890px) {    
+    
+.contact .field .get_in_touch .contents  .row{
+    flex-wrap: wrap;
+} 
+.contact .field .contact_us .form form .form-group{
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width:630px){
+    .contact .field {
+        flex-wrap: wrap;
+        flex-direction: column  ;
+    }
+    .contact .field .get_in_touch,
+    .contact .field .contact_us{
+        width: 100%;
+    }
+    .contact .field .get_in_touch .contents  .row{
+        flex-wrap: nowrap;
+    }
+    .contact .field .contact_us .form form .form-group{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:250px) {    
+    
+.contact .field .get_in_touch .contents  .row{
+    flex-wrap: wrap;
+} 
+.contact .field .contact_us .form form .form-group{
+    flex-wrap: wrap;
+}
+main h2{
+    font-size: 100%;
+}
+}
+@media (max-width:360px){
+    main h2{
+        font-size: 100%;
+    }
+}

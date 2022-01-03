@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Infotech | Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="course/course.css">
+</head>
+
+<body>
+    <!-- courses web page -->
+    <div class="main-div">
+        <!-- nav-bar start-->
+        <header>
+            <div class="nav_bar">
+                <div class="container flex">
+                    <div class="nav flex">
+                        <div class="logo"><img src="images/Logo For Web1.png" alt=""></div>
+                        <nav>
+                            <ul class="flex">
+                                <li onclick="window.location='index.html'">Home</li>
+                                <li onclick="window.location='about/index.html'">About us</li>
+                                <li onclick="window.location='course/index.html'">Courses</li>
+                                <li onclick="window.location='contact/index.html'">Contact Us</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="search flex">
+                        <div class="form">
+                            <form action="" method="post">
+                                <input type="search" name="" id="" placeholder="Search...">
+                                <input type="submit" value="search">
+                            </form>
+                        </div>
+                        <div class="bar flex">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- nav-bar end-->
+
+        <!-- main section start-->
+        <main>
+            <div class="container flex">
+                <h2>
+                    Our Courses
+                </h2>
+            </div>
+        </main>
+        <!-- main section end-->
+        <!-- apply section start-->
+        <div class="apply">
+            <div class="container">
+                <div class="apply-course">
+                    <div class="title flex">
+                        <h2>Course Name</h2>
+                    </div>
+                    <div class="field flex" >
+                        <div class="imgBx"><img src="images/catia-Logo.png" alt=""></div>
+                        <div class="info">
+                            <h3>course Name</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eius laborum voluptatem
+                                odio, dolorum doloribus et! Consequuntur nulla dignissimos quisquam quasi repellat eaque
+                                laborum laudantium.
+                            </p>
+                            <a href="#" class="btn">Download Syllabus</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form">
+                        <h2>Enquiry Form</h2>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="fullname">fullname: </label>
+                                <input type="text" name="fullname" placeholder="Fullname">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email_Id: </label>
+                                <input type="email" name="email" placeholder="Email_Id">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone Number">Phone Number: </label>
+                                <input type="number" name="number" placeholder="number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Course Name">Course Name: </label>
+                                <input type="text" name="course" placeholder="course" required>
+                            </div>
+                            <div class="form-group" id="check_field">
+                                <label for="batch">Batch Status:</label>
+                                <div class="check flex">
+                                    <input type="checkbox" name="batch" value="online" id="online">
+                                    <label for="online"> Online</label>
+                                    <input type="checkbox" name="batch" value="classroom" id="classroom">
+                                    <label for="classroom"> Classroom</label>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- apply section end-->
+        <!-- enquiry form start -->
+        <div class="enquiry show_enquiry" id="enquiry">
+            <div class="cross " id="cross">x</div>
+            <div class="form">
+                <h2>Enquiry Form</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="fullname">fullname: </label>
+                        <input type="text" name="fullname" placeholder="Fullname">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email_Id: </label>
+                        <input type="email" name="email" placeholder="Email_Id">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone Number">Phone Number: </label>
+                        <input type="number" name="number" placeholder="number">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="batch">Batch Status:</label>
+                        <div class="check">
+                            <input type="checkbox" name="batch" value="online"><span> Online</span>
+                            <input type="checkbox" name="batch" value="classroom"><span> Classroom</span>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- enquiry form end -->
+            <!-- feedback form start -->
+            <div class="feedback_btn">
+                <p>feedback</p>
+            </div>
+    <div class="feedback">
+            <div class="feedback_form flex">
+                <form action="" method="post" id="feedback_form">
+                    <div class="close_btn"><i class="fas fa-times"></i></div>
+                    <h2>
+                        feedback form
+                    </h2>
+                    <div class="form-group">
+                        <label for="">Fullname</label>
+                        <input type="text" name="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email_Id</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input type="text" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Your feedback</label>
+                        <textarea name="feedback" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit_feedback" value="Submit">
+                    </div>
+
+                </form>
+            </div>
+        
+    </div>
+    <!-- feedback form end -->
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

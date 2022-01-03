@@ -1,0 +1,212 @@
+main{
+    height: 50vh;
+    margin-top: 7vh;
+    clip-path: none;
+    justify-content: left;
+    align-items: left;
+    display: flex;
+    background-image:linear-gradient(90deg,rgb(247, 122, 195),transparent) ,url(../images/our\ servises.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .flex{
+    justify-content: center;
+    align-items: center;
+}
+main h2{
+    font-size: 3rem;
+    color: var(--white);
+    text-shadow: 1px 2px 3px var(--blue);
+    letter-spacing: 2px;
+}
+/* courses */
+.courses{
+    background-color: #eee;
+}
+.courses .table{
+    width: 100%;
+    overflow-x: auto;
+    background: #fff;
+    box-shadow: 1px 3px 6px rgba(19, 18, 19, 0.356);
+}
+.courses .table table,th,td{
+    border-collapse:collapse;
+    border: 1px solid var(--green);
+}
+.courses .table table{
+    width: 100%;
+    color: var(--blue);
+}
+.courses .table table thead{
+    width: 100%;
+}
+.courses .table table  tr {
+    border: 1px solid rgb(224, 12, 12);
+}
+.courses .table table thead tr th{
+    padding: 10px;
+    font-size: calc(var(--text-size)*1.3);
+    color: #fff;
+    background-color: var(--black);
+}
+.courses .table table .sub_heading th{
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: calc(var(--text-size)*1.2);
+}
+.courses .table table tbody tr td{
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: calc(var(--text-size)*1);
+}
+.courses .table table tbody tr td:first-child{
+    font-weight: 600;
+}
+.courses .table table tbody .btn{
+    margin: 5px 0;
+    padding: 5px 15px;
+}
+.apply{
+    width: 100%;
+}
+hr{
+    margin: 20px 0;
+}
+.apply .apply-course .title{
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.apply .apply-course .title h2{
+    position: relative;
+    text-transform: capitalize;
+    font-size: calc(var(--text-size)*2);
+    color: var(--blue);
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.apply .apply-course .title h2::before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: crimson;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.apply .imgBx, .apply .info{
+    width: 50%;
+    padding: 10px;
+}
+.apply .imgBx{
+    text-align: center;
+}
+.imgBx img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.apply .info{
+    justify-content: start;
+    align-items: flex-start;
+}
+.apply .info h3{
+    color: var(--blue);
+    font-size: calc(var(--text-size)*1.3);
+    text-transform: capitalize;
+}
+.apply .form form .form-group{
+    display: flex;
+    margin: 10px 0;
+}
+.apply .form form  .form-group:nth-child(1), .apply .form-group:nth-child(2){
+    gap: 10px;
+}
+.apply .form form  .form-group:nth-child(3), .apply .form-group:nth-child(4), .apply .form-group:nth-child(2), .apply .form-group:nth-child(1){
+    flex-direction: column;
+}
+.apply .form form .form-group .first_name , .last_name, .number, .email{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.apply .form form .form-group label{
+    font-size: var(--text-size);
+    font-weight: 500;
+    padding: 5px 0;
+}
+.apply .form form .form-group input,textarea{
+    padding: 5px;
+    border: 1px solid blueviolet;
+    border-radius: 3px;
+    border-bottom: 2px solid blueviolet;
+    resize: vertical;
+    font-size: var(--text-size);
+    width: 100%;
+}
+.apply .form form .form-group textarea{
+    height: 120px;
+}
+.apply .form form .form-group input[type="submit"]{
+    padding: 5px 10px;
+    font-size: var(--text-size);
+    background-color: rgba(137, 43, 226);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 150px;
+}
+.apply  form .form-group .check{
+    display: flex !important;
+    flex-direction: row !important;
+    min-width: 200px;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+.apply  form .form-group .check input[type="checkbox"]{
+    background: blue;
+    outline: none;
+}
+.apply  form .form-group#check_field{
+    flex-wrap: wrap;
+}
+.apply .form form .form-group input[type="submit"]:hover{
+    color: blueviolet;
+    background-color: transparent;
+}
+@media (max-width:890px){        
+.contact .field .get_in_touch .contents  .row{
+    flex-wrap: wrap;
+} 
+.apply .form form .form-group{
+    flex-wrap: wrap;
+}
+}
+@media (max-width:630px){
+     .field {
+        flex-wrap: wrap;
+        flex-direction: column  ;
+    }
+     .field .get_in_touch,
+     .field {
+        width: 100%;
+    }
+     .field .get_in_touch .contents  .row{
+        flex-wrap: nowrap;
+    }
+    .form form .form-group{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:250px) {    
+    
+ .get_in_touch .contents  .row{
+    flex-wrap: wrap;
+} 
+.form form .form-group{
+    flex-wrap: wrap;
+}
+}
